@@ -19,7 +19,7 @@ You can upload your own recording into raw/ directory.
 
 ### out/
 
-Here you can find a new analized and updated video version.
+Here you can find a new analized and updated version of your vour video.
 
 ### logs/
 
