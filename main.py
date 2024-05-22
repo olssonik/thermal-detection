@@ -9,14 +9,18 @@ elif not os.path.exists("logs"):
 elif not os.path.exists("raw"):
     os.makedirs("raw")
 
-print("Please choose one of theese options")
-print(os.listdir("raw"))
-userInput = input()
+print("Please choose an option")
+raws = os.listdir("raw")
+
+for x  in  range(len(raws)):
+    print(str(x + 1) + " : " + raws[x])
+
+userInput = int(input()) - 1
 
 dir = os.getcwd()
 
-outPath = os.path.join(dir, "out", userInput + '.output.mp4')
-logFile = './logs/pointofInterest ' + userInput + '.txt'
+outPath = os.path.join(dir, "out", raws[userInput] + '.output.mp4')
+logFile = './logs/pointofInterest ' + raws[userInput] + '.txt'
 
 def main(inp):
 
@@ -77,7 +81,7 @@ def main(inp):
     
 
 if __name__ == "__main__":
-    main(userInput)
+    main(raws[userInput])
 
 def read():
     with open(logFile) as f:

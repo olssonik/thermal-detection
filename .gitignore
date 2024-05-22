@@ -1,2 +1,8 @@
 raw/Thermal Clip 1.mp4
 raw/Thermal Clip 2.mp4
+
+out/*
+logs/*
+
+__pycache__
+.pytest_cache
