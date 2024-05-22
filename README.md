@@ -23,7 +23,7 @@ You can upload your own recording into raw/ directory.
 
 (*press enter when it asks you for your input*)
 
-You can change the video that will be tested by changing this line to the name of your recording in raw/ directory.
+You can change the video that will be tested by changing this line to the name of your recording in raw/ directory.</br>
 `5|    main("test.mp4")`
 
 ### test_video
