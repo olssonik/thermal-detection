@@ -17,6 +17,14 @@ thermal camera recordings.
 
 You can upload your own recording into raw/ directory.
 
+### out/
+
+Here you can find a new analized and updated video version.
+
+### logs/
+
+After successfully running the script you should receive a log file that will include coordinates of the area that is hot and a frame number that it appears on.
+
 ## Tests
 
 `$ pytest tests.py`
