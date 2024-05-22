@@ -40,6 +40,8 @@ def main(inp):
             break
 
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+
+        current_frame_number = cap.get(cv2.CAP_PROP_POS_FRAMES)
         # purple
         lower_purple = np.array([130, 50, 50])
         upper_purple = np.array([145, 255, 255])
@@ -66,7 +68,7 @@ def main(inp):
             if w > 5 and h > 5:
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 3 )
                 with open(logFile, 'a') as f:
-                    f.writelines("X: " + str(x) + " Y: " + str(y) + " W: " + str(w) + " H: " + str(h) + '\n')
+                    f.writelines("Frame: " + str(current_frame_number) + " X: " + str(x) + " Y: " + str(y) + " W: " + str(w) + " H: " + str(h) + '\n')
                     f.close()
         cv2.imshow('frame', frame)
         output.write(frame)
