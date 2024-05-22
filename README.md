@@ -1,6 +1,6 @@
 # High temperature recognition
 
-Purpose of this project is to use computer vision and recognize hot temperatures on a
+Purpose of this project is to use computer vision and recognise hot temperatures on a
 thermal camera recordings.
 
 ## Requirements
