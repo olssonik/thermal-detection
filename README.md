@@ -38,6 +38,8 @@ You can change the video that will be tested by changing this line to the name o
 
 Runs the program and after it finishes, it will open log file and check its contents to see if the program managed to find any points of interests in the video.
 
+![example image](assets/example.png)
+
 ### test_ouput
 
 Check if there is an output video saved into directory out/
